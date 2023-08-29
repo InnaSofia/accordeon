@@ -27,11 +27,11 @@
   buttonModal1.addEventListener('clic',openModal1); */
 
 
-  function openModal(){
+/*   function openModal(){
     const Container = document.getElementById('Container')
 
     Container.style.display = "flex"
     
 }
 
-
+ */
