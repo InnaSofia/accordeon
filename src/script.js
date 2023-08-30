@@ -1,17 +1,14 @@
-let isOpen = false
+ let isOpen = false
 
 function openModal(){
-    const Container = document.getElementById('myContainer')
+    const myContainer = document.getElementById('myContainer')
 
     if(isOpen){
-        Container.styles.display = "none"
+        myContainer.styles.display = "none"
         isOpen = false
     }else{
-        Container.styles.display = "flex"
+        myContainer.styles.display = "flex"
         isOpen = true
     }
-console.log(openModal)
-    
-    
-}
+} 
 
