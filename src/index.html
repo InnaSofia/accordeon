@@ -5,100 +5,19 @@
     <title>Accordeon</title>
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" type="text/css" href="styles.scss" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" type="text/css" src="app.js"></script>
     <script src="https://kit.fontawesome.com/5a7e4cd635.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="absolute inset-0 bg-gradient-to-r from-sky-500 to-indigo-500">
 
         <div class="w-full px-8 pt-24">
-            <div id="list" class="mx-auto px-4 pt-8 pb-12 w-full max-w-xl bg-white prose rounded-xl shadow-xl">
+            <div class="mx-auto px-4 pt-8 pb-12 w-full max-w-xl bg-white prose rounded-xl shadow-xl">
 
                 <h1 class="text-center text-3xl font-black">Часто задаваемые вопросы</h1>
 
 
-  
-
-                <div class="mt-2">
-                  <div id="question" class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-700">
-                      <div><span>Что такое Госуслуги?</span></div>
-                      <i class="fa-solid fa-check text-sm text-purple-700"></i></div>
-                  <div id="answer" class="px-4 pt-4 pb-2 text-sm text-gray-500 Modal hidden">Госуслуги — портал, где граждане, организации и ИП 
-                    могут оформить документы, получить выписки и справки 
-                    в электронном виде, найти юридически значимую информацию.</div>
-              </div>
-
-
-
-
-                <div class="mt-2">
-                  <div id="question" class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-700">
-                      <div><span>Как зарегистрироваться на Госуслугах?</span></div>
-                      <i class="fa-solid fa-check text-sm text-purple-700"></i></div>
-                  <div id="answer" class="px-4 pt-4 pb-2 text-sm text-gray-500 Modal hidden">Онлайн через банк — 10 минут, 
-                    Лично в центре обслуживания — от 15 минут, При помощи номера телефона и электронной почты.</div>
-              </div>
-
-
-              <div class="mt-2">
-                <div id="question" class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-700">
-                    <div><span>Куда подавать документы для смены ФИО?</span></div>
-                    <i class="fa-solid fa-check text-sm text-purple-700"></i></div>
-                <div id="answer" class="px-4 pt-4 pb-2 text-sm text-gray-500 Modal hidden">В загс по месту жительства или регистрации рождения.</div>
-            </div>
-
-
-            <div class="mt-2">
-              <div id="question" class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-700">
-                  <div><span>Сколько времени занимает регистрация имени?</span></div>
-                  <i class="fa-solid fa-check text-sm text-purple-700"></i></div>
-              <div id="answer" class="px-4 pt-4 pb-2 text-sm text-gray-500 Modal hidden">Один месяц, если все необходимые документы были выданы отделом ЗАГС, 
-                в который вы обратились. Если нужные документы были выданы другими отделами ЗАГС, 
-                срок может быть увеличен до трёх месяцев.</div>
-          </div>
-
-
-
-          <div class="mt-2">
-            <div id="question" class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-700">
-                <div><span>Что такое СНИЛС и зачем он нужен?</span></div>
-                <i class="fa-solid fa-check text-sm text-purple-700"></i></div>
-            <div id="answer" class="px-4 pt-4 pb-2 text-sm text-gray-500 Modal hidden">СНИЛС — страховой номер 
-              индивидуального лицевого счёта, 
-              который присваивается каждому гражданину Социальным фондом (СФР). Страховой номер состоит из 11 цифр 
-              и присваивается один раз. 
-              Он не меняется даже при утере документов или смене ФИО. СНИЛС используется для пенсионных отчислений, 
-              а также для регистрации на Госуслугах 
-              и сайтах ведомств. 
-              С его помощью можно подавать заявления и получать электронные услуги.</div>
-        </div>
-
-
-        <div class="mt-2">
-          <div id="question" class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-700">
-              <div><span>Как оформить СНИЛС?</span></div>
-              <i class="fa-solid fa-check text-sm text-purple-700"></i></div>
-          <div id="answer" class="px-4 pt-4 pb-2 text-sm text-gray-500 Modal hidden">СНИЛС можно оформить у работодателя, 
-            на сайте Социального фонда (СФР) или лично в отделении СФР или МФЦ. Страховой 
-            номер присваивается один раз и не меняется даже при утере документов или смене ФИО.</div>
-      </div>
-
-
-      <div class="mt-2">
-        <div id="question" class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-700">
-            <div><span>Что делать если СНИЛС утерян?</span></div>
-            <i class="fa-solid fa-check text-sm text-purple-700"></i></div>
-        <div id="answer" class="px-4 pt-4 pb-2 text-sm text-gray-500 Modal hidden">СНИЛС не имеет 
-          физического носителя — достаточно знать свой номер, поэтому утрата старой пластиковой карточки 
-          или распечатки с номером ничем не грозит. Ваши данные хранятся в системе 
-          Социального фонда (СФР), а узнать СНИЛС можно разными способами.</div>
-    </div>
-
-
-
-               
+  <div id="list"></div>
 
 
             </div>
