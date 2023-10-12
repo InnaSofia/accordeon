@@ -59,9 +59,19 @@ function renderArray(){
 }
 renderArray()
 
+const button = document.getElementById('button')// замок
+
 const questions = document.querySelectorAll('#question')//все вопросы
 const answers = document.querySelectorAll('#answer')//все ответы
 
+/* function lock(){
+    if(isOpen){
+        button.style.display = 'none'
+        isOpen = false
+    }else{
+        button.style.display = 'flex'
+        isOpen = true
+    }} */
 //добавим обработчики событий для каждого вопросы
 questions.forEach((question, index, ) =>{
     question.addEventListener('click',() =>{
