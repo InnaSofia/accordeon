@@ -48,7 +48,8 @@ function renderArray(){
                       <div><span>
                       ${arrayItem.question}
                       </span></div>
-                      <div><button id="button"><i class="fa-solid fa-lock" style="color: #7b0f99;"></i><button></div>
+                      <div><button><i class="fa-solid fa-lock" style="color: #7b0f99;"></i><button>
+                      <button class="hidden button-faq text-default text-main-grey-sand">-<button></div>
                       </div>
                   <div id="answer" class="px-4 pt-4 pb-2 text-sm text-gray-500 Modal hidden">
                   ${arrayItem.answer}
@@ -59,10 +60,10 @@ function renderArray(){
 }
 renderArray()
 
-const button = document.getElementById('button')// замок
-
 const questions = document.querySelectorAll('#question')//все вопросы
 const answers = document.querySelectorAll('#answer')//все ответы
+
+
 
 /* function lock(){
     if(isOpen){
