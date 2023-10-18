@@ -44,14 +44,22 @@ function renderArray(){
     array.forEach((arrayItem) =>{
         container.innerHTML += `
         <div class="mt-2">
-                  <div id="question" class="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-700">
-                      <div><span>
-                      ${arrayItem.question}
-                      </span></div>
-                      <div><button><i class="fa-solid fa-lock" style="color: #7b0f99;"></i><button>
-                      <button class="hidden button-faq text-default text-main-grey-sand">-<button></div>
+                  <div id="question" class="questions flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-700">
+                         <div>
+                            <span>${arrayItem.question}</span>
+                         </div>
+
+
+                         <div>
+                             <button class='btn'>
+                             <i class="fa-solid fa-lock" style="color: #7b0f99"></i>
+                             </button>
+
+                        
+                         </div>
                       </div>
-                  <div id="answer" class="px-4 pt-4 pb-2 text-sm text-gray-500 Modal hidden">
+
+                  <div id="answer" class="answers px-4 pt-4 pb-2 text-sm text-gray-500 hidden">
                   ${arrayItem.answer}
                   </div>
               </div>
@@ -60,8 +68,9 @@ function renderArray(){
 }
 renderArray()
 
-const questions = document.querySelectorAll('#question')//все вопросы
-const answers = document.querySelectorAll('#answer')//все ответы
+const questions = document.querySelectorAll('.questions')//все вопросы
+const answers = document.querySelectorAll('.answers')//все ответы
+const buttons = document.querySelectorAll('.btn')//кнопки
 
 
 
@@ -73,10 +82,14 @@ const answers = document.querySelectorAll('#answer')//все ответы
         button.style.display = 'flex'
         isOpen = true
     }} */
+
+    
 //добавим обработчики событий для каждого вопросы
 questions.forEach((question, index, ) =>{
     question.addEventListener('click',() =>{
         answers[index].classList.toggle('hidden') //находим класс(тогд будет включать и переключать)
+        buttons[index].querySelector('i').classList.toggle('fa-lock')
+        buttons[index].querySelector('i').classList.toggle('fa-unlock')
         
     })
 })
